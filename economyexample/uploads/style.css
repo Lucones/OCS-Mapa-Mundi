@@ -1,0 +1,86 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#tudo {
+	width: 100%;
+}
+
+#myCanvas {
+	position: absolute;
+}
+
+.flowplayer {
+	z-index: 1000;
+}
+
+#tagLink {
+	z-index: 2000;
+	position: absolute;
+	width: 150px;
+	height: 20px;
+	display: none;
+}
+
+#link {
+	width: 140px;
+	height: 20px;
+	border-radius: 10px;
+	margin: 0px;
+	padding-left: 10px;
+	box-shadow: 3px 3px 3px #666;
+}
+
+#tags {
+	width: 100%;
+	margin: 20px 0px 0px 0px;
+	padding: 0px;
+}
+
+#rolagem {
+	overflow: auto;
+	
+}
+
+.tag {
+	text-indent:-9999px;
+	margin:0 auto;
+	display: inline-block;
+	list-style: none;
+	margin: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	padding-top: 4px;
+	width: 3px;
+	height: 15px;
+	text-align: center;
+	font-size: 9px;
+	background-image: linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(73,132,180)),color-stop(1, rgb(97,155,203)));
+}
+
+.tag:hover {
+	text-indent:0px;
+	font-color: #ffffff;
+	border: 1px solid #e29624;
+	background: #e29624; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e29624 0%, #e5bd77 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e29624), color-stop(100%,#e5bd77)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e29624 0%,#e5bd77 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e29624 0%,#e5bd77 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e29624 0%,#e5bd77 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e29624 0%,#e5bd77 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e29624', endColorstr='#e5bd77',GradientType=0 ); /* IE6-9 */
+	cursor: pointer;
+	width: 30px;
+	height: 16px;
+}
+
+#editName, #editLink, #editButton {
+	display: none;
+}

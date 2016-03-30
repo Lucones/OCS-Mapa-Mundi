@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- 1. skin -->
+	<link rel="stylesheet" href="../minimalist.css">
+	
+	<link rel="stylesheet" type="text/css" href="../style.css">
+ 
+	<!-- 2. jquery library -->
+	<script src="../jquery.min.js"></script>
+ 
+	<!-- 3. flowplayer -->
+	<script src="../flowplayer.min.js"></script>
+	
+	<script src="../script.js"></script>
+
+	<title>Tagging Project</title>
+	
+</head>
+
+<body onload="changeSize(); tempo()" onmousemove="mousePosition()">
+	<div id="tudo">
+		<canvas id="myCanvas" width="800" height="450" onclick="canvas(); saveTags()"><script>document.addEventListener('keyup', modifyTagSize, false);</script></canvas>
+			<div class="flowplayer fixed-controls no-toggle" onclick="playToTag()">
+				<video>
+					<source type="video/mp4" src= - >
+				</video>
+			</div>
+	</div>
+	<div id="rolagem">
+		<ul id="tags">
+			
+		</ul>
+		<input type="text" id="editName" />
+		<input type="text" id="editLink" />
+		<button id="editButton" type="button" onclick="editNameLink(this.value)">Save</button>
+		<div id="confirmRemove"></div>
+	</div>
+	<div id="position"></div>
+	<div id="dados"></div>
+	<input type="hidden" id="x" />
+	<input type="hidden" id="y" />
+	<input type="hidden" id="stringTag" />
+</body>
+</html>
