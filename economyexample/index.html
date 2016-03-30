@@ -384,12 +384,13 @@
 
       function drawMap(data) {
         var rows = data['rows'];
+        var nomes="";
         for (var i in rows) {
           if (rows[i][0] != 'Antarctica') {
             var newCoordinates = [];
             var geometries = rows[i][1]['geometries'];
             var names = rows[i][0];
-            alert(rows[i][0] + "");
+            nomes= nomes + " " +rows[i][0] + " ";
             if (geometries) {
               for (var j in geometries) {
                 newCoordinates.push(constructNewCoordinates(geometries[j]));
@@ -416,6 +417,7 @@
             country.setMap(map);
           }
         }
+        alert(nomes);
       }
 
       function constructNewCoordinates(polygon) {
@@ -440,7 +442,7 @@
 
       <button id = "um" onclick = 'biQuadlowPassEffect();' class="button" type="button" > Importar + 
       </button>
-<button type="file" id="myFile"  class="button" onchange="myFunction()">
+<input type="file" id="myFile"  class="button" onchange="myFunction()">
 
 <p id="demo"></p>
     <script>
